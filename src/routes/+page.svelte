@@ -298,8 +298,9 @@ ctx.drawImage(bCanvas, bOffset.x - displacement, bOffset.y - displacement);
     top: -1.2rem;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--neutral-5);
     font-size: 1rem;
+    color: #f8f9fa;
+    background: #39625D;
     border-image: url('/border.png') 8 11 11 8 fill / 8px 11px 11px 8px;
     padding: 0.4rem 1rem;
   }
