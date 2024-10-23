@@ -16,15 +16,26 @@
   let animationId: number;
   let time = 0;
   let animationSpeed = 0.05;
-  let displacement = 10;
+  let displacement = 7;
+  let imgIdx = 0;
+  const images = ['image-01.jpeg', 'image-02.png', 'image-03.png', 'image-04.jpeg'];
 
   onMount(() => {
     hljs.highlightAll();
     origCanvas = document.createElement("canvas");
+    
     const img = new Image();
     img.onload = () => processImg(img);
-    img.src = "image-01.jpeg";
+    img.src = images[imgIdx];
   });
+
+  function nextImg() {
+    imgIdx = (imgIdx+1)%images.length; 
+    
+    const img = new Image();
+    img.onload = () => processImg(img);
+    img.src = images[imgIdx];
+  }
 
   function changeImg(e) {
     const reader = new FileReader();
@@ -133,6 +144,7 @@
 
     <div class="controls">
       <h2>Controls</h2>
+      <button on:click={nextImg} style="margin-bottom: 1rem;">Next Image</button>
       <input type="file" accept="image/*" on:change={changeImg} />
       <h3>Timestep (speed)</h3>
       <input
