@@ -302,6 +302,7 @@ ctx.drawImage(bCanvas, bOffset.x - displacement, bOffset.y - displacement);
     color: #f8f9fa;
     background: #39625D;
     border-image: url('/border.png') 8 11 11 8 fill / 8px 11px 11px 8px;
+    border-radius: 5px;
     padding: 0.4rem 1rem;
   }
   pre.container > h2 {
@@ -330,8 +331,11 @@ ctx.drawImage(bCanvas, bOffset.x - displacement, bOffset.y - displacement);
   canvas,
   code {
     margin: 10px auto;
+    color: #f8f9fa;
+    background: #39625D;
     border-image: url('/border.png') 8 11 11 8 fill / 8px 11px 11px 8px;
-    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    padding: 5px;
     font-family: 'Courier New', Courier, monospace;
   }
   code {
