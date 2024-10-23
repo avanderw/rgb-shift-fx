@@ -180,7 +180,7 @@
     isolated and stored in its own canvas element, giving us complete control
     over how we manipulate each color layer independently.
   </p>
-  
+
   <div class="layers" style="margin: 2rem 0rem;">
     <div class="container">
       <h2>Red layer</h2>
@@ -300,7 +300,7 @@ ctx.drawImage(bCanvas, bOffset.x - displacement, bOffset.y - displacement);
     transform: translateX(-50%);
     background: var(--neutral-5);
     font-size: 1rem;
-    border-image: url(border.png) 8 11 11 8 fill / 8px 11px 11px 8px;
+    border-image: url('/border.png') 8 11 11 8 fill / 8px 11px 11px 8px;
     padding: 0.4rem 1rem;
   }
   pre.container > h2 {
@@ -329,7 +329,7 @@ ctx.drawImage(bCanvas, bOffset.x - displacement, bOffset.y - displacement);
   canvas,
   code {
     margin: 10px auto;
-    border-image: url(border.png) 8 11 11 8 fill / 8px 11px 11px 8px;
+    border-image: url('/border.png') 8 11 11 8 fill / 8px 11px 11px 8px;
     padding: 5px 5px 5px 5px;
     font-family: 'Courier New', Courier, monospace;
   }
