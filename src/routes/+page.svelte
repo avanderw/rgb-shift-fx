@@ -18,7 +18,7 @@
   let animationSpeed = 0.05;
   let displacement = 7;
   let imgIdx = 0;
-  const images = ['image-01.jpeg', 'image-02.png', 'image-03.png', 'image-04.jpeg'];
+  const images = ['image-01.jpeg', 'image-02.png', 'image-03.png', 'image-04.jpeg', 'image-05.png'];
 
   onMount(() => {
     hljs.highlightAll();
